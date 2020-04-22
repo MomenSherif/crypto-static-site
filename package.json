@@ -1,0 +1,38 @@
+{
+  "name": "restaurant",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass src/sass/main.scss dist/css/style.css -w",
+    "watch:js": "node_modules/.bin/babel src/js/script.js -w -o dist/js/script.min.js",
+    "compile:sass": "node-sass  src/sass/main.scss dist/css/style.comp.css",
+    "prefix:css": "npx postcss dist/css/style.comp.css --use autoprefixer -o dist/css/style.prefix.css",
+    "compress:css": "node-sass dist/css/style.prefix.css dist/css/style.min.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css",
+    "build:js": "node_modules/.bin/babel src/js/script.js -w -o dist/js/script.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MomenSherif/Restaurant.git"
+  },
+  "author": "Mo'men Sherif",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MomenSherif/Restaurant/issues"
+  },
+  "homepage": "https://github.com/MomenSherif/Restaurant#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "autoprefixer": "^9.6.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-plugin-import": "^2.18.0",
+    "node-sass": "^4.12.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^6.1.2"
+  }
+}

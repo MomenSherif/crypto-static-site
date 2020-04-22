@@ -1,0 +1,41 @@
+.select {
+    margin-bottom: 60px;
+    position: relative;
+    cursor: pointer;
+    
+    &::after{
+        content: "\f078";
+        font-family: "Font Awesome 5 Pro";
+        font-weight: 900;
+        position: absolute;
+        top: 0;
+        left: 100px;
+    }
+
+    &__items{
+        display: none;
+        position: absolute;
+        top: 150%;
+        left: 0;
+        border-radius: 6px;
+        width: 130px;
+        background-color: #fff;
+        padding: 5px 0;
+        color: #333;
+
+        &--shown {
+            display: block;
+        }
+
+    }
+
+    &__item{
+        padding: 10px 5px;
+
+        &:hover {
+            background-color: #6a53fe5b
+        }
+        &--active{}
+    }
+
+}

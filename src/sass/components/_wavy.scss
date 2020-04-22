@@ -1,0 +1,19 @@
+.wavy {
+  position: absolute;
+  display: block;
+  bottom: -2px;
+  left: 0;
+  width: 102%;
+
+  &__image {
+    display: block;
+    width: 100%;
+  }
+
+  &--reverse {
+    width: 102%;
+    top: -2px;
+    bottom: auto;
+    transform: rotateX(180deg);
+  }
+}

@@ -1,0 +1,30 @@
+.proof {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  max-width: 280px;
+  flex: 50%;
+
+
+  &__icon-box {
+    margin-right: 10px;
+  }
+
+  &__icon {
+    display: block;
+    height: 50px;
+    width: 50px;
+    background-color: #f3f2fa;
+    padding: 8px 10px;
+    border-radius: 10px;
+  }
+  &__description {
+    .paragraph {
+      margin: 0;
+
+      @media (max-width: 991px) {
+        font-size: 15px;
+      }
+    }
+  }
+}

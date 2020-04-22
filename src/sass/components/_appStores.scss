@@ -1,0 +1,17 @@
+.app-stores {
+  display: flex;
+  margin-top: 30px;
+
+  &__link {
+    flex: 1;
+    max-width: 150px;
+
+    &:first-child {
+      margin-right: 15px;
+    }
+  }
+  &__store {
+    display: block;
+    max-width: 100%;
+  }
+}

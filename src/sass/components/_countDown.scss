@@ -1,0 +1,27 @@
+.count-down {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  text-align: center;
+  
+  @media(max-width: 578px){
+    width: 100%;
+  }
+
+  &--finished {
+    font-size: 25px;
+    font-weight: 700;
+    color: $color-main;
+  }
+
+  &__counter {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-weight: 700;
+    font-size: 32px;
+    color: #32325d;
+  }
+  &__unit {
+      color: $color-paragraph;
+  }
+}

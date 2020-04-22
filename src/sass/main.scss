@@ -1,0 +1,21 @@
+@import "vendors/normalize";
+@import "vendors/bootstrapGrid";
+
+@import "abstract/variables";
+
+
+@import "base/base";
+@import "base/typography";
+
+@import "components/buttons";
+@import "components/wavy";
+@import "components/testimonial";
+@import "components/countDown";
+@import "components/appStores";
+@import "components/proof";
+@import "components/select";
+
+@import "layout/header";
+@import "layout/footer";
+
+@import "pages/home"
